@@ -62,7 +62,7 @@ const databaseMethods = Object.keys(database).reduce((acc, el) => {
 	return acc
 }, {})
 
-const buyBookForUser = async (bookId, userId, callback) => {
+const buyBookForUser = async (bookId, userId) => {
   try {
     await databaseMethods['getUser'](userId);
 
